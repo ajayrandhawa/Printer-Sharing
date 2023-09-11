@@ -1,4 +1,4 @@
-# Printer Sharing 1.0
+# Printer Sharing Software 1.0
 
 <center>
 <img src="./sc/1.png" />
