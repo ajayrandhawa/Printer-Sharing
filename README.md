@@ -9,3 +9,6 @@ Minimal Printer Share is a streamlined Windows application designed for straight
 3. <strong>Web Server Integration:</strong> Enable printer sharing over the internet by utilizing a local web server. This feature allows remote printing from anywhere, making it ideal for remote work or accessing your printer while on the go.
 
 4. <strong>User-Friendly Interface:</strong> OpenPrint features an intuitive interface that allows for easy configuration and management of printer sharing settings, ensuring a straightforward experience.
+
+
+## Under Development 
