@@ -1,5 +1,9 @@
 # Printer Sharing 1.0
 
+<center>
+<img src="./sc/1.png" />
+</center>
+
 Minimal Printer Share is a streamlined Windows application designed for straightforward printer sharing within your local network and web. This minimalistic tool simplifies the process, allowing you to share a single printer across multiple Windows devices effortlessly.
  
 1. <strong>Free and Open Source:</strong> OpenPrint is free to use and open source, ensuring transparency and flexibility for users who want to customize and modify the software to suit their needs.
