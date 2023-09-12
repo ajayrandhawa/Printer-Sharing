@@ -35,6 +35,7 @@
             this.ShareBtn = new System.Windows.Forms.Button();
             this.stsLabel = new System.Windows.Forms.Label();
             this.header = new System.Windows.Forms.Label();
+            this.console = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // label1
@@ -110,11 +111,22 @@
             this.header.Size = new System.Drawing.Size(370, 100);
             this.header.TabIndex = 7;
             // 
+            // console
+            // 
+            this.console.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.console.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.console.Location = new System.Drawing.Point(12, 436);
+            this.console.Name = "console";
+            this.console.Size = new System.Drawing.Size(360, 113);
+            this.console.TabIndex = 8;
+            this.console.UseCompatibleStateImageBehavior = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 561);
+            this.Controls.Add(this.console);
             this.Controls.Add(this.header);
             this.Controls.Add(this.stsLabel);
             this.Controls.Add(this.ShareBtn);
@@ -139,6 +151,7 @@
         private System.Windows.Forms.Button ShareBtn;
         private System.Windows.Forms.Label stsLabel;
         private System.Windows.Forms.Label header;
+        private System.Windows.Forms.ListView console;
     }
 }
 
