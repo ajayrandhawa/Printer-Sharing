@@ -11,6 +11,9 @@ using System.Windows.Forms;
 using System.Drawing.Printing;
 using System.Management;
 
+using System.Diagnostics;
+using System.Security.Principal;
+
 namespace PrinterSharing
 {
     public partial class Form1 : Form
@@ -32,9 +35,9 @@ namespace PrinterSharing
             // Assuming you want to set the width of the first column to 33%
             if (LocalPrinterListView.Columns.Count > 0)
             {
-                LocalPrinterListView.Columns[0].Width = columnWidth;
-                LocalPrinterListView.Columns[1].Width = columnWidth;
-                LocalPrinterListView.Columns[2].Width = columnWidth - 5;
+                LocalPrinterListView.Columns[0].Width = columnWidth + 100;
+                LocalPrinterListView.Columns[1].Width = columnWidth - 40;
+                LocalPrinterListView.Columns[2].Width = columnWidth - 70;
             }
 
             // Add the list of printers to a ListBox control
@@ -94,6 +97,57 @@ namespace PrinterSharing
                 }
             }
             return "Offline";
+        }
+
+
+        private void btnSharePrinter_Click(object sender, EventArgs e)
+        {
+            string printerName = "YourPrinterName"; // Replace with the actual name of your printer
+
+            // Check if the user has administrative privileges
+            if (!IsUserAdministrator())
+            {
+                stsLabel.Text = "Administrator rights required to share the printer.";
+                return;
+            }
+
+            // Enable printer sharing using the "net share" command
+            Process process = new Process();
+            ProcessStartInfo startInfo = new ProcessStartInfo
+            {
+                FileName = "cmd.exe",
+                RedirectStandardInput = true,
+                UseShellExecute = false,
+                CreateNoWindow = true
+            };
+
+            process.StartInfo = startInfo;
+            process.Start();
+
+            // Run the "net share" command to share the printer
+            string command = "";
+            process.StandardInput.WriteLine(command);
+            process.StandardInput.WriteLine("exit");
+
+            process.WaitForExit();
+            
+            // Check the exit code to see if sharing was successful
+            if (process.ExitCode == 0)
+            {
+                stsLabel.Text = "Printer '{printerName}' is now shared.";
+            }
+            else
+            {
+                stsLabel.Text = "Failed to share printer '{printerName}'.";
+            }
+        }
+
+        // Check if the user has administrative privileges
+        private bool IsUserAdministrator()
+        {
+            WindowsIdentity identity = WindowsIdentity.GetCurrent();
+            WindowsPrincipal principal = new WindowsPrincipal(identity);
+            return principal.IsInRole(WindowsBuiltInRole.Administrator);
         }
 
 
