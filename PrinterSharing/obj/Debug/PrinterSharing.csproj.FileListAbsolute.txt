@@ -1,9 +1,9 @@
 c:\users\scurite\documents\visual studio 2012\Projects\PrinterSharing\PrinterSharing\bin\Debug\PrinterSharing.exe.config
 c:\users\scurite\documents\visual studio 2012\Projects\PrinterSharing\PrinterSharing\obj\Debug\PrinterSharing.csprojResolveAssemblyReference.cache
-c:\users\scurite\documents\visual studio 2012\Projects\PrinterSharing\PrinterSharing\obj\Debug\PrinterSharing.Form1.resources
 c:\users\scurite\documents\visual studio 2012\Projects\PrinterSharing\PrinterSharing\obj\Debug\PrinterSharing.Properties.Resources.resources
 c:\users\scurite\documents\visual studio 2012\Projects\PrinterSharing\PrinterSharing\obj\Debug\PrinterSharing.csproj.GenerateResource.Cache
 c:\users\scurite\documents\visual studio 2012\Projects\PrinterSharing\PrinterSharing\bin\Debug\PrinterSharing.exe
 c:\users\scurite\documents\visual studio 2012\Projects\PrinterSharing\PrinterSharing\bin\Debug\PrinterSharing.pdb
 c:\users\scurite\documents\visual studio 2012\Projects\PrinterSharing\PrinterSharing\obj\Debug\PrinterSharing.exe
 c:\users\scurite\documents\visual studio 2012\Projects\PrinterSharing\PrinterSharing\obj\Debug\PrinterSharing.pdb
+c:\users\scurite\documents\visual studio 2012\Projects\PrinterSharing\PrinterSharing\obj\Debug\PrinterSharing.Dashboard.resources
