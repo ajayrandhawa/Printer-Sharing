@@ -12,19 +12,6 @@ namespace PrinterSharing
     class TcpServer
     {
 
-        //static void Main()
-        //{
-        //    // Start both server functionalities in separate threads
-        //    var messageServerThread = new System.Threading.Thread(StartMessageServer);
-        //    var fileServerThread = new System.Threading.Thread(StartFileServer);
-
-        //    messageServerThread.Start();
-        //    fileServerThread.Start();
-
-        //    // Start the client for sending messages
-        //    StartMessageClient();
-        //}
-
         static void StartMessageServer()
         {
             // Define the server IP address and port for messages
